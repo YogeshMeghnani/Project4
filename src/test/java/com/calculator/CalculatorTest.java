@@ -2,7 +2,7 @@ package com.calculator;
 
 import org.junit.*;
 
-public class calculatorT {
+public class CalculatorTest {
     
     private Calculator calculator;
     
