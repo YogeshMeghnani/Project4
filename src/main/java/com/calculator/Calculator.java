@@ -3,6 +3,22 @@ package com.iiitb.spe.calc;
 import java.util.*;
 
 public class Calculator {
+	public static double add(double a,double b)
+	{
+		return a+b;
+	}
+	public static double subtract(double a,double b)
+	{
+		return a-b;
+	}
+	public static double multiply(double a,double b)
+	{
+		return a*b;
+	}
+	public static double divide(double a,double b)
+	{
+		return a/b;
+	}
 	public static void main(String args[]) {
 		boolean execute = true;
 		int choice;
@@ -30,7 +46,7 @@ public class Calculator {
 					number1 = sc.nextDouble();
 					System.out.println("Enter number 2");
 					number2 = sc.nextDouble();
-					System.out.println(number1 + number2);
+					System.out.println(add(number1,number2));
 					System.out.println("");
 					break;
 
@@ -41,7 +57,7 @@ public class Calculator {
 					number1 = sc.nextDouble();
 					System.out.print("Enter number 2: ");
 					number2 = sc.nextDouble();
-					System.out.println(number1 - number2);
+					System.out.println(subtract(number1,number2));
 					break;
 				
 				case 3:
@@ -55,7 +71,7 @@ public class Calculator {
 						System.out.println("Divisor cannot divide by zero");
 
 					} else {
-						System.out.println(number1 / number2);
+						System.out.println(divide(number1,number2));
 					}
 					break;
 
@@ -66,7 +82,7 @@ public class Calculator {
 					number1 = sc.nextDouble();
 					System.out.print("Enter number 2: ");
 					number2 = sc.nextDouble();
-					System.out.println(number1 * number2);
+					System.out.println(multiply(number1,number2));
 					break;
 				
 				default:
