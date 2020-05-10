@@ -1,5 +1,5 @@
 FROM java:8
 WORKDIR /
-ADD HelloWorld.jar HelloWorld.jar
+ADD Calculator.jar Calculator.jar
 EXPOSE 8080
-CMD java - jar HelloWorld.jar
+CMD java - jar Calculator.jar
